@@ -15,7 +15,6 @@ interface Props {
 const Cart: FC<Props> = () => {
   const cart = useSelector((state: State) => state.cart)
   const dispatch = useDispatch()
-
   const handleCloseSideBar = () => {
     dispatch(toggleCartSideBar())
   }
